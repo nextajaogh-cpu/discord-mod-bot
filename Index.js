@@ -10,7 +10,7 @@ const client = new Client({
 });
 
 const TOKEN =MTQ5MzM2NTQxNjk0MzQyMzQ5OQ.GUwdlO.Aw_skw5rTfMcjJZJR7sp2IPCclGBTVFKxWirI0;
-const OWNER_ID = 1364619125422293113;
+const TOKEN = process.env.TOKEN;
 
 client.on("ready", () => {
   console.log(`Bot online: ${client.user.tag}`);
