@@ -72,3 +72,8 @@ client.on("messageCreate", async (msg) => {
 });
 
 client.login(TOKEN);
+client.on("error", console.error);
+
+process.on("unhandledRejection", error => {
+  console.error("Error:", error);
+});
